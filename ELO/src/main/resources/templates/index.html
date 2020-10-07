@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welkom</title>
+</head>
+<body>
+<h1>ELO berekenen</h1>
+<p>Op deze website kan je je ELO-punten berekenen.</p>
+<form action="/VerwelkomingSpeler">
+    <p>
+        <label for="naam">Naam: </label>
+        <input type="text" name="naam" id="naam">
+    </p>
+    <p>
+        <label for="ELO">Jouw ELO voor de wedstrijd: </label>
+        <input type="text" name="ELO" id="ELO">
+    </p>
+    <p>
+        <input type="submit" value="Indienen">
+    </p>
+</form>
+</body>
+</html>

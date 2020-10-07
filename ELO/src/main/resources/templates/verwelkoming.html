@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welkom</title>
+</head>
+<body>
+<h1>Welkom <span th:text="${speler.getNaam()}"></span></h1>
+<form action="/spelers_invullen">
+    <p>Speelde je een jeugdmatch of een volwassenenmatch?</p>
+    <p>
+        <label for="jeugd">Jeugd</label>
+        <input type="radio" id="jeugd" name="jeugd">
+
+        <label for="volwassenen">Volwassenen</label>
+        <input type="radio" id="volwassenen" name="volwassenen">
+    </p>
+    <p>
+        <input type="submit" value="Verder gaan">
+    </p>
+</form>
+</body>
+</html>
