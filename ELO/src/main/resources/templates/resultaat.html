@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Resultaat</title>
+</head>
+<body>
+<h1 th:text="${'Je hebt nu ' + mijnELO + ' ELo-punten.'}"></h1>
+<h2 th:if="${verschil <1 && verschil>-1}">Jammer, je hebt vandaag geen punten gewonnen of verloren</h2>
+<h2 th:if="${verschil <-1}"><span th:text="${'Jammer, je hebt vandaag '+ verschil*-1 + ' punten verloren'}"></span></h2>
+<h2 th:if="${verschil >1}"><span th:text="${'Proficiat, je hebt vandaag '+ verschil + ' punten gewonnen'}"></span></h2>
+<p><a href="/">Homepage</a></p>
+</body>
+</html>
