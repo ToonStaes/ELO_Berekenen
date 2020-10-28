@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Wedstrijd Volwassenen</title>
+    <title>Wedstrijd Jeugd</title>
 </head>
 <body>
 <h1>Resultaten invullen</h1>
-<form action="/berekenenVolwassenen">
+<form action="/berekenenJeugd">
     <p>
         <label for="elo1"><span th:text="${'Hoeveel ELO-punten had ' + Tegenstander1.getNaam() + '?'}"></span></label>
         <input type="text" name="elo1" id="elo1">
@@ -30,14 +30,6 @@
     <p>
         <label for="gewonnen3">Gewonnen? </label>
         <input type="radio" name="gewonnen3" id="gewonnen3">
-    </p>
-    <p>
-        <label for="elo4"><span th:text="${'Hoeveel ELO-punten had ' + Tegenstander4.getNaam() + '?'}"></span></label>
-        <input type="text" name="elo4" id="elo4">
-    </p>
-    <p>
-        <label for="gewonnen4">Gewonnen? </label>
-        <input type="radio" name="gewonnen4" id="gewonnen4">
     </p>
     <p>
         <input type="submit" value="Resultaat berekenen">
